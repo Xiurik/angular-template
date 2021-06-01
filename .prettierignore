@@ -1,0 +1,8 @@
+package.json
+package-lock.json
+dist
+e2e
+build
+coverage
+node_modules
+yarn.lock
