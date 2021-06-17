@@ -1,6 +1,6 @@
-# Klubit
+# Angular Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4.
+To change the project name search for AngularTemplate in all the files and replace it with the name you want.
 
 ## Development server
 

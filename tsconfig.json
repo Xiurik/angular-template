@@ -6,13 +6,33 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
+    "importHelpers": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
-    "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@imgs/*": ["./src/assets/imgs/*"],
+      "@environment": ["./src/environments/environment.ts"],
+      // Core
+      "@api/*": ["./src/app/core/api/*"],
+      "@auth/*": ["./src/app/core/auth/*"],
+      "@guards/*": ["./src/app/core/guards/*"],
+      "@interceptors/*": ["./src/app/core/interceptors/*"],
+      "@models-core/*": ["./src/app/core/models/*"],
+      // Data
+      "@models-data/*": ["./src/app/data/models/*"],
+      "@services/*": ["./src/app/data/services/*"],
+      "@shared-data/*": ["./src/app/data/shared/*"],
+      // Layout
+      "@components/*": ["./src/app/layout/components/*"],
+      "@directives/*": ["./src/app/layout/directives/*"],
+      "@pages/*": ["./src/app/layout/pages/*"],
+      "@pipes/*": ["./src/app/layout/pipes/*"],
+      "@shared-layout/*": ["./src/app/layout/shared/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
