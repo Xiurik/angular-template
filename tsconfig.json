@@ -17,20 +17,21 @@
       "@imgs/*": ["./src/assets/imgs/*"],
       "@environment": ["./src/environments/environment.ts"],
       // Core
-      "@api/*": ["./src/app/core/api/*"],
-      "@auth/*": ["./src/app/core/auth/*"],
-      "@guards/*": ["./src/app/core/guards/*"],
-      "@interceptors/*": ["./src/app/core/interceptors/*"],
-      "@models-core/*": ["./src/app/core/models/*"],
+      "@api": ["./src/app/core/api/index.ts"],
+      "@auth": ["./src/app/core/auth/index.ts"],
+      "@guards": ["./src/app/core/guards/index.ts"],
+      "@interceptors": ["./src/app/core/interceptors/index.ts"],
+      "@mocks": ["./src/app/core/mocks/index.ts"],
+      "@models-core": ["./src/app/core/models/index.ts"],
       // Data
-      "@models-data/*": ["./src/app/data/models/*"],
-      "@services/*": ["./src/app/data/services/*"],
-      "@shared-data/*": ["./src/app/data/shared/*"],
+      "@models-data": ["./src/app/data/models/index.ts"],
+      "@services": ["./src/app/data/services/index.ts"],
+      "@shared-data": ["./src/app/data/shared/index.ts"],
       // Layout
       "@components/*": ["./src/app/layout/components/*"],
-      "@directives/*": ["./src/app/layout/directives/*"],
+      "@directives": ["./src/app/layout/directives/index.ts"],
       "@pages/*": ["./src/app/layout/pages/*"],
-      "@pipes/*": ["./src/app/layout/pipes/*"],
+      "@pipes": ["./src/app/layout/pipes/index.ts"],
       "@shared-layout/*": ["./src/app/layout/shared/*"]
     }
   },
