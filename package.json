@@ -5,14 +5,15 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
-    "build:test": "ng build --test",
-    "test": "ng test && ng lint --configuration=test",
+    "build:prod": "ng build --configuration production",
+    "build:dev": "ng build --configuration development",
+    "test": "ng test && ng lint --configuration=dev",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pretty-quick": "pretty-quick --staged",
-    "p:verify": "prettier --config ./.prettierrc --list-different \"src/{app,environments}/**/*{.ts,.html,.scss}\"",
-    "p:fix": "prettier --config ./.prettierrc --write \"src/{app,environments}/**/*{.ts,.html,.scss}\""
+    "docs": "npx compodoc -p tsconfig.doc.json -s -o -r 4300 --theme vagrant",
+    "p:verify": "prettier --config ./.prettierrc --list-different \"src/app/**/*{.ts,.html,.scss}\"",
+    "p:fix": "prettier --config ./.prettierrc --write \"src/app/**/*{.ts,.html,.scss}\"",
+    "pretty-quick": "pretty-quick --staged"
   },
   "husky": {
     "hooks": {
@@ -43,6 +44,7 @@
     "@angular-devkit/build-angular": "^12.0.4",
     "@angular/cli": "^12.0.4",
     "@angular/compiler-cli": "^12.0.5",
+    "@compodoc/compodoc": "^1.1.11",
     "@types/jasmine": "^3.7.7",
     "@types/node": "^12.20.15",
     "codelyzer": "^6.0.2",

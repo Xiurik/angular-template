@@ -2,26 +2,14 @@
 
 To change the project name search for AngularTemplate in all the files and replace it with the name you want.
 
-## Development server
+## Commands you can use in this Project (Update if needed).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Run `ng build` to build the application.
+- Run `npm run start` or `ng serve` to execute the [Application](http://localhost:4200/) in `http://localhost:4200/`.
+- Run `npm run build:prod` to build the application for production environment.
+- Run `npm run build:dev` to build the application for development environment.
+- Run `npm run test` to execute tests pointing to dev.
+- Run `npm run lint` to validate all the files against lint configuration.
+- Run `npm run docs` to generate all the documentation of the application [Documentation](http://127.0.0.1:4300/index.html).
+- Run `npm run p:verify` to validate .ts/.html/.scss files format against prettier.
+- Run `npm run p:fix` to format .ts/.html/.scss files with prettier configuration.
