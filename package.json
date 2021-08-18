@@ -16,7 +16,8 @@
     "docs": "npx compodoc -p tsconfig.doc.json -s -o -r 4300 --theme vagrant",
     "p:verify": "prettier --config ./.prettierrc --list-different \"src/app/**/*{.ts,.html,.scss}\"",
     "p:fix": "prettier --config ./.prettierrc --write \"src/app/**/*{.ts,.html,.scss}\"",
-    "pretty-quick": "pretty-quick --staged"
+    "pretty-quick": "pretty-quick --staged",
+    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "husky": {
     "hooks": {
@@ -44,12 +45,12 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^12.0.4",
-    "@angular/cli": "^12.0.4",
-    "@angular/compiler-cli": "^12.0.5",
-    "@compodoc/compodoc": "^1.1.11",
-    "@types/jasmine": "^3.7.7",
-    "@types/node": "^12.20.15",
+    "@angular-devkit/build-angular": "^12.2.1",
+    "@angular/cli": "^12.2.1",
+    "@angular/compiler-cli": "^12.2.2",
+    "@compodoc/compodoc": "^1.1.14",
+    "@types/jasmine": "^3.8.2",
+    "@types/node": "^12.20.19",
     "codelyzer": "^6.0.2",
     "husky": "^4.3.8",
     "jasmine-core": "~3.6.0",
@@ -58,8 +59,8 @@
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.6.0",
-    "prettier": "^2.3.1",
+    "karma-jasmine-html-reporter": "^1.7.0",
+    "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
