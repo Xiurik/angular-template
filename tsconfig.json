@@ -19,7 +19,6 @@
       // Core
       "@api": ["./src/app/core/api/index.ts"],
       "@auth": ["./src/app/core/auth/index.ts"],
-      "@guards": ["./src/app/core/guards/index.ts"],
       "@interceptors": ["./src/app/core/interceptors/index.ts"],
       "@mocks": ["./src/app/core/mocks/index.ts"],
       "@models-core": ["./src/app/core/models/index.ts"],
