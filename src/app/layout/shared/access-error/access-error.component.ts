@@ -10,7 +10,6 @@ export class AccessErrorComponent implements OnInit {
   //#endregion 'Input, Output, ViewChild'
 
   //#region 'Variables'
-  test: any;
   //#endregion 'Variables'
 
   //#region 'Angular Life Cycle'
