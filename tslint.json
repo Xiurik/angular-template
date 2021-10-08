@@ -1,5 +1,5 @@
 {
-  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "extends": ["tslint:recommended", "tslint-config-prettier", "tslint-angular"],
   "rulesDirectory": ["codelyzer"],
   "rules": {
     "align": {
@@ -28,8 +28,8 @@
     ],
     "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
     "no-empty": false,
-    "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
-    "no-non-null-assertion": false,
+    "no-inferrable-types": [true, "ignore-params"],
+    "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-var-requires": false,
@@ -110,6 +110,7 @@
     "no-string-literal": false,
     "triple-equals": [true, "allow-undefined-check", "allow-null-check"],
     "radix": false,
-    "object-literal-shorthand": false
+    "object-literal-shorthand": false,
+    "no-any": true
   }
 }

@@ -1,6 +1,6 @@
 # Angular Template
 
-To change the project name search for AngularTemplate in all the files and replace it with the name you want.
+To change the project name search for angular-template in all the files and replace it with the name you want.
 
 # Commands you can use in this Project (Update if needed).
 

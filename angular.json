@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularTemplate": {
+    "angular-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AngularTemplate",
+            "outputPath": "dist/angular-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -123,24 +123,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularTemplate:build"
+            "browserTarget": "angular-template:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularTemplate:build:production"
+              "browserTarget": "angular-template:build:production"
             },
             "development": {
-              "browserTarget": "AngularTemplate:build:development"
+              "browserTarget": "angular-template:build:development"
             },
             "test": {
-              "browserTarget": "AngularTemplate:build:test"
+              "browserTarget": "angular-template:build:test"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularTemplate:build"
+            "browserTarget": "angular-template:build"
           }
         },
         "test": {
@@ -167,22 +167,22 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularTemplate:serve"
+            "devServerTarget": "angular-template:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularTemplate:serve:production"
+              "devServerTarget": "angular-template:serve:production"
             },
             "development": {
-              "devServerTarget": "AngularTemplate:serve:development"
+              "devServerTarget": "angular-template:serve:development"
             },
             "test": {
-              "devServerTarget": "AngularTemplate:serve:test"
+              "devServerTarget": "angular-template:serve:test"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "AngularTemplate"
+  "defaultProject": "angular-template"
 }

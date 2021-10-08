@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  appName: 'AngularTemplate',
+  appName: 'angular-template',
   apiEndpoint: 'http://localhost'
 };
