@@ -9,8 +9,9 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-eslint/recommended",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
@@ -42,7 +43,7 @@
         ],
         "@typescript-eslint/prefer-readonly": "error",
         "@typescript-eslint/require-await": "error",
-        "arrow-parens": ["off", "always"],
+        "arrow-parens": ["error", "always"],
         "brace-style": ["error", "1tbs"],
         "linebreak-style": "off",
         "max-len": [
@@ -53,23 +54,11 @@
         ],
         "new-parens": "off",
         "newline-per-chained-call": "off",
-        "no-duplicate-case": "error",
-        "no-extra-semi": "off",
         "no-irregular-whitespace": "off",
         "no-multiple-empty-lines": "error",
         "object-shorthand": "off",
         "prefer-const": "off",
         "radix": "off",
-        "react/jsx-curly-spacing": "off",
-        "react/jsx-equals-spacing": "off",
-        "react/jsx-tag-spacing": [
-          "off",
-          {
-            "afterOpening": "allow",
-            "closingSlash": "allow"
-          }
-        ],
-        "react/jsx-wrap-multilines": "off",
         "space-in-parens": ["off", "never"]
       }
     },
