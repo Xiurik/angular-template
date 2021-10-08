@@ -14,8 +14,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "docs": "npx compodoc -p tsconfig.doc.json -s -o -r 4300 --theme vagrant",
-    "p:verify": "prettier --config ./.prettierrc --list-different \"src/app/**/*{.ts,.html,.scss}\"",
-    "p:fix": "prettier --config ./.prettierrc --write \"src/app/**/*{.ts,.html,.scss}\"",
+    "p:verify": "prettier --config ./.prettierrc --list-different \"src/app/**/*{.ts,.html,.scss,.css,.js}\"",
+    "p:fix": "prettier --config ./.prettierrc --write \"src/app/**/*{.ts,.html,.scss,.css,.js}\"",
     "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save"
   },
   "husky": {
