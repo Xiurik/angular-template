@@ -1,6 +1,6 @@
 # Angular Template
 
-To change the project name search for angular-template in all the files and replace it with the name you want.
+To change template project name, search for **angular-template** in all the files and replace it with your project name.
 
 # Commands you can use in this Project (Update if needed).
 
@@ -20,11 +20,12 @@ To change the project name search for angular-template in all the files and repl
 
 ## Prettier
 
-> - Run **`npm run p:verify`** to validate .ts/.html/.scss files format against prettier.
+> - Run **`npm run p:check`** to validate .ts/.html/.scss files format against prettier.
 > - Run **`npm run p:fix`** to format .ts/.html/.scss files with prettier configuration.
 
 ## Misc
 
+> - Run **`npm update:packages`** to update all the npm packages.
 > - Run **`npm run test`** to execute tests pointing to dev.
 > - Run **`npm run lint`** to validate all the files against lint configuration.
 > - Run **`npm run docs`** to generate all the documentation of the application **[Documentation](http://127.0.0.1:4300/index.html)**.
