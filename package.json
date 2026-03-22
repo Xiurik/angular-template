@@ -13,10 +13,19 @@
     "test": "ng test && ng lint",
     "lint": "ng lint",
     "docs": "npx compodoc -p tsconfig.doc.json -s -o -r 4300 --theme vagrant",
-    "p:check": "prettier --config ./.prettierrc --check \"src/app/**/*{.ts,.html,.css,.js}\"",
-    "p:fix": "prettier --config ./.prettierrc --write \"src/app/**/*{.ts,.html,.css,.js}\"",
+    "p:check": "prettier --check \"src/**/*.{ts,html,css,json}\"",
+    "p:fix": "prettier --write \"src/**/*.{ts,html,css,json}\"",
+    "format": "prettier --write \"src/**/*.{ts,html,css,json}\"  && ng lint --fix",
     "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save",
     "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html,css,json}": [
+      "prettier --write"
+    ],
+    "src/**/*.{ts,html}": [
+      "eslint --fix"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -64,8 +73,10 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "^2.2.0",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
-    "pretty-quick": "^4.2.2",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.2.2",
     "ts-node": "~10.9.0",
     "typescript": "~5.9.0",

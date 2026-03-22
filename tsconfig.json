@@ -5,33 +5,67 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "importHelpers": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": ["ES2022", "dom", "dom.iterable"],
+    "strictNullChecks": true,
+    "lib": [
+      "ES2022",
+      "dom",
+      "dom.iterable"
+    ],
     "paths": {
-      "@imgs/*": ["./src/assets/imgs/*"],
-      "@environment": ["./src/environments/environment.ts"],
+      "@imgs/*": [
+        "./src/assets/imgs/*"
+      ],
+      "@environment": [
+        "./src/environments/environment.ts"
+      ],
       // Core
-      "@api": ["./src/app/core/api/index.ts"],
-      "@auth": ["./src/app/core/auth/index.ts"],
-      "@interceptors": ["./src/app/core/interceptors/index.ts"],
-      "@mocks": ["./src/app/core/mocks/index.ts"],
-      "@models-core": ["./src/app/core/models/index.ts"],
+      "@api": [
+        "./src/app/core/api/index.ts"
+      ],
+      "@auth": [
+        "./src/app/core/auth/index.ts"
+      ],
+      "@interceptors": [
+        "./src/app/core/interceptors/index.ts"
+      ],
+      "@mocks": [
+        "./src/app/core/mocks/index.ts"
+      ],
+      "@models-core": [
+        "./src/app/core/models/index.ts"
+      ],
       // Data
-      "@models-data": ["./src/app/data/models/index.ts"],
-      "@services": ["./src/app/data/services/index.ts"],
-      "@shared-data": ["./src/app/data/shared/index.ts"],
+      "@models-data": [
+        "./src/app/data/models/index.ts"
+      ],
+      "@services": [
+        "./src/app/data/services/index.ts"
+      ],
+      "@shared-data": [
+        "./src/app/data/shared/index.ts"
+      ],
       // Layout
-      "@components/*": ["./src/app/layout/components/*"],
-      "@directives": ["./src/app/layout/directives/index.ts"],
-      "@pages/*": ["./src/app/layout/pages/*"],
-      "@pipes": ["./src/app/layout/pipes/index.ts"],
-      "@shared-layout/*": ["./src/app/layout/shared/*"]
+      "@components/*": [
+        "./src/app/layout/components/*"
+      ],
+      "@directives": [
+        "./src/app/layout/directives/index.ts"
+      ],
+      "@pages/*": [
+        "./src/app/layout/pages/*"
+      ],
+      "@pipes": [
+        "./src/app/layout/pipes/index.ts"
+      ],
+      "@shared-layout/*": [
+        "./src/app/layout/shared/*"
+      ]
     }
   },
   "angularCompilerOptions": {

@@ -9,13 +9,13 @@ const ROUTES: Routes = [
     path: '',
     children: [
       { path: 'access-error', component: AccessErrorComponent },
-      { path: 'page-not-found', component: PageNotFoundComponent }
-    ]
-  }
+      { path: 'page-not-found', component: PageNotFoundComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(ROUTES)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class SharedRoutingModule {}
