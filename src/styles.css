@@ -1,4 +1,4 @@
-// Global styles
+@import 'tailwindcss';
 
 /*#region Body*/
 /*#endregion*/
@@ -10,10 +10,4 @@
 /*#endregion*/
 
 /*#region Media Queries*/
-/*#endregion*/
-
-/*#region Bootstrap*/
-/*#endregion*/
-
-/*#region Material UI*/
 /*#endregion*/

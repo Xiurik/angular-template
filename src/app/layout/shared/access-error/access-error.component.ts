@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   standalone: false,
   selector: 'app-access-error',
   templateUrl: './access-error.component.html',
-  styleUrls: ['./access-error.styles.scss']
+  styleUrls: ['./access-error.styles.css']
 })
 export class AccessErrorComponent {}
