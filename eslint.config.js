@@ -46,8 +46,6 @@ module.exports = tseslint.config(
     rules: {
       // ── Angular: recommended baseline ──────────────────────────────────────
       ...angularPlugin.configs.recommended.rules,
-      // NgModule-based project: pending migration to standalone components
-      '@angular-eslint/prefer-standalone': 'warn',
 
       // ── Angular: component & directive naming ───────────────────────────────
       '@angular-eslint/component-class-suffix': 'error',
