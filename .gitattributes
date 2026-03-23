@@ -1,0 +1,16 @@
+# Enforce LF line endings for all text files in this repository.
+# This overrides any local core.autocrlf setting.
+* text=auto eol=lf
+
+# Explicitly mark binary files as binary to prevent line-ending conversion.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.otf binary
