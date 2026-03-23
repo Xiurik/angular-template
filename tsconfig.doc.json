@@ -1,4 +1,18 @@
 {
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/test.ts", "src/**/*.spec.ts", "src/app/file-to-exclude.ts"]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Compodoc requires CommonJS + classic node module resolution to compile sources
+    "module": "CommonJS",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.e2e-spec.ts",
+    "node_modules",
+    "dist"
+  ]
 }

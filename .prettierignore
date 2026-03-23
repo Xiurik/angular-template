@@ -15,6 +15,9 @@ yarn.lock
 public/
 e2e/
 
+# Generated docs
+documentation/
+
 # Files not to format
 *.min.js
 *.min.css

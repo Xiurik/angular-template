@@ -13,7 +13,7 @@ const globals = require('globals');
 module.exports = tseslint.config(
   // ─── Ignored paths ──────────────────────────────────────────────────────────
   {
-    ignores: ['projects/**/*', 'dist/**/*', '.angular/**/*'],
+    ignores: ['projects/**/*', 'dist/**/*', '.angular/**/*', 'documentation/**/*'],
   },
 
   // ─── TypeScript source files (non-spec) ─────────────────────────────────────
@@ -138,7 +138,8 @@ module.exports = tseslint.config(
           pathGroups: [
             { pattern: '@angular/**', group: 'external', position: 'before' },
             {
-              pattern: '@{api,auth,guards,interceptors,mocks,models-core,models-data,services,shared-data,components/**,directives,pages/**,pipes,shared-layout/**}',
+              pattern:
+                '@{api,auth,guards,interceptors,mocks,models-core,models-data,services,shared-data,components/**,directives,pages/**,pipes,shared-layout/**}',
               group: 'internal',
               position: 'after',
             },
@@ -219,4 +220,3 @@ module.exports = tseslint.config(
   // ─── Prettier: must be last — disables formatting rules that conflict with Prettier ──
   prettierConfig,
 );
-
