@@ -11,6 +11,7 @@
     "build:test": "ng build --configuration test",
     "build:prod": "ng build --configuration production",
     "test": "ng test && ng lint",
+    "test:ci": "ng test --no-watch --browsers=ChromeHeadless && ng lint",
     "lint": "ng lint",
     "docs:build": "compodoc -p tsconfig.doc.json --theme vagrant --name 'Angular Template' --hideGenerator",
     "docs:serve": "compodoc -s -o -r 4300",
@@ -18,7 +19,7 @@
     "p:check": "prettier --check \"src/**/*.{ts,html,css,json}\"",
     "p:fix": "prettier --write \"src/**/*.{ts,html,css,json}\"",
     "format": "prettier --write \"src/**/*.{ts,html,css,json}\"  && ng lint --fix",
-    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save",
+    "update:packages": "npx rimraf node_modules package-lock.json && npm install --legacy-peer-deps && npm update --legacy-peer-deps",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -45,16 +46,16 @@
     "zone.js": "~0.16.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^21.2.0",
+    "@angular-devkit/build-angular": "^20.3.21",
     "@angular-eslint/builder": "^21.3.1",
     "@angular-eslint/eslint-plugin": "^21.3.1",
     "@angular-eslint/eslint-plugin-template": "^21.3.1",
     "@angular-eslint/schematics": "^21.3.1",
     "@angular-eslint/template-parser": "^21.3.1",
-    "@angular/build": "^21.2.0",
+    "@angular/build": "^20.3.21",
     "@angular/cli": "^21.2.0",
     "@angular/compiler-cli": "^21.2.0",
-    "@compodoc/compodoc": "^1.2.1",
+    "@compodoc/compodoc": "^1.1.16",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/postcss": "^4.2.2",
     "@types/jasmine": "^6.0.0",
