@@ -19,7 +19,7 @@
     "p:check": "prettier --check \"src/**/*.{ts,html,css,json}\"",
     "p:fix": "prettier --write \"src/**/*.{ts,html,css,json}\"",
     "format": "prettier --write \"src/**/*.{ts,html,css,json}\"  && ng lint --fix",
-    "update:packages": "npx rimraf node_modules package-lock.json && npm install --legacy-peer-deps && npm update --legacy-peer-deps",
+    "update:packages": "npx rimraf package-lock.json && npm install --legacy-peer-deps",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -46,13 +46,13 @@
     "zone.js": "~0.16.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^20.3.21",
+    "@angular-devkit/build-angular": "^21.2.0",
     "@angular-eslint/builder": "^21.3.1",
     "@angular-eslint/eslint-plugin": "^21.3.1",
     "@angular-eslint/eslint-plugin-template": "^21.3.1",
     "@angular-eslint/schematics": "^21.3.1",
     "@angular-eslint/template-parser": "^21.3.1",
-    "@angular/build": "^20.3.21",
+    "@angular/build": "^21.2.0",
     "@angular/cli": "^21.2.0",
     "@angular/compiler-cli": "^21.2.0",
     "@compodoc/compodoc": "^1.1.16",
